@@ -1,5 +1,7 @@
 package bankingwebsite;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
@@ -56,7 +58,7 @@ public class loginstart {
         alert.accept();
     }
 
-    @AfterMethod
+	@AfterMethod
     public void tearDown() {
 
       driver.quit();
